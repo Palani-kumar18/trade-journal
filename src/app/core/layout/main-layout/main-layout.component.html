@@ -1,0 +1,30 @@
+<div class="layout">
+  <!-- Sidebar -->
+<app-sidebar [collapsed]="!isSidebarOpen" [style.width.px]="isSidebarOpen ? 240 : 70"></app-sidebar>
+  <div class="main">
+    <!-- Top Navbar -->
+    <div class="topbar d-flex justify-content-between">
+    <div class="left_nav  d-flex align-items-center">
+    <button (click)="toggleSidebar()">  <i class="fas fa-bars"></i></button>
+     <div class="nav-Content">
+         <h6>Hi,Trader <i class="fa-solid fa-hand"></i></h6>
+         <p class="m-0">{{ today | date:'fullDate' }}</p>
+    </div>
+    </div>
+    <div class="right_nav d-flex align-items-center">
+        <div class="notifcation_bell">
+           <i class="fa-regular fa-bell"></i>
+        </div>
+        <div class="add_trade">
+             <button>Add Trade</button>
+        </div>
+    </div>
+    </div>
+    <!-- Page Content -->
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+
+</div>

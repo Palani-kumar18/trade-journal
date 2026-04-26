@@ -1,0 +1,120 @@
+.sidebar {
+  height: 100vh;
+    background:  #77e1fb;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+/* COLLAPSED STATE */
+.sidebar.closed {
+  padding: 20px 10px;
+}
+.sidebar.closed .menu a {
+  text-align: center;
+}
+
+.sidebar.closed .menu a span {
+  display: none;
+}
+
+.sidebar.closed .logo h2 {
+  font-size: 16px;
+}
+
+/* Logo */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu a {
+   display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu a:hover {
+  background: #1e293b;
+  color: white;
+}
+
+/* Bottom profile */
+.profile {
+  border-top: 1px solid #334155;
+  padding-top: 15px;
+}
+
+.profile button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #ef4444;
+  color: white;
+}
+.content {
+  padding: 20px;
+  flex: 1;
+  width: 100%;
+}
+
+/* Profile container */
+.profile {
+  border-top: 1px solid #334155;
+  padding-top: 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Profile info */
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Logout button */
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+}
+
+/* 🔥 COLLAPSED STATE FIX */
+.sidebar.closed .profile span {
+  display: none;
+}
+
+/* Center items when collapsed */
+.sidebar.closed .profile {
+  align-items: center;
+}
+
+.sidebar.closed .logout-btn {
+  justify-content: center;
+}

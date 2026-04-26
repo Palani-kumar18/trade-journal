@@ -1,0 +1,47 @@
+.layout {
+  display: flex;
+    height: 100vh;
+
+}
+
+/* Sidebar */
+app-sidebar {
+  transition: all 0.3s ease;
+}
+
+app-sidebar.closed {
+  width: 70px;   /* collapsed width */
+}
+
+/* Main area */
+.main {
+   flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Top bar */
+.topbar {
+  height: 60px;
+  background:  #77e1fb;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+width: 100%;
+
+}
+
+.topbar button {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Content */
+.content {
+  padding: 20px;
+}

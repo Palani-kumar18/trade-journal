@@ -1,0 +1,50 @@
+<div class="sidebar" [class.closed]="collapsed">
+  <!-- TOP: Logo -->
+  <div class="logo">
+    <h2>TradePro</h2>
+  </div>
+
+  <!-- MIDDLE: Menu -->
+  <nav class="menu">
+  <a routerLink="/dashboard">
+    <i class="fas fa-home"></i>
+    <span>Dashboard</span>
+  </a>
+
+  <a routerLink="/trades">
+    <i class="fas fa-chart-line"></i>
+    <span>Trades</span>
+  </a>
+
+  <a [routerLink]="['/journal']">
+    <i class="fas fa-book"></i>
+    <span>Journal</span>
+  </a>
+
+  <a routerLink="/analytics">
+    <i class="fas fa-chart-pie"></i>
+    <span>Analytics</span>
+  </a>
+
+  <a routerLink="/settings">
+    <i class="fas fa-cog"></i>
+    <span>Settings</span>
+  </a>
+</nav>
+
+  <!-- BOTTOM: Profile -->
+ <div class="profile">
+
+  <div class="profile-info">
+    <i class="fas fa-user-circle"></i>
+    <span>User</span>
+  </div>
+
+  <button class="logout-btn" (click)="logout()">
+    <i class="fas fa-sign-out-alt"></i>
+    <span>Logout</span>
+  </button>
+
+</div>
+
+</div>
